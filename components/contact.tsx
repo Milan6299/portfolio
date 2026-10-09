@@ -1,12 +1,12 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
+import { CheckCircle, Loader2, Mail, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, MapPin, Send, CheckCircle, Loader2 } from "lucide-react";
+import { Textarea } from "@/components/ui/textarea";
 import { mydata } from "@/data/folio";
 
 export function Contact() {
@@ -24,10 +24,8 @@ export function Contact() {
 		e.preventDefault();
 		setStatus("submitting");
 
-		// Simulate form submission
 		await new Promise((resolve) => setTimeout(resolve, 1500));
 
-		// In a real app, you'd send this to your backend
 		console.log("Form submitted:", formData);
 
 		setStatus("success");

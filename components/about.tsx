@@ -1,7 +1,7 @@
 "use client";
 
-import { mydata } from "@/data/folio";
 import { motion, type Variants } from "framer-motion";
+import { mydata } from "@/data/folio";
 
 const stats = [
 	{ value: `${mydata.yoe}+`, label: "Years Experience" },

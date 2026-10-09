@@ -26,18 +26,6 @@ export function Skills() {
 		},
 	};
 
-	// const barVariants : Variants  = (delay: number) => ({
-	// 	hidden: { width: 0 },
-	// 	visible: {
-	// 		width: "var(--skill-level)",
-	// 		transition: {
-	// 			delay,
-	// 			duration: 1.2,
-	// 			ease: [0.25, 0.46, 0.45, 0.94],
-	// 		},
-	// 	},
-	// });
-
 	return (
 		<section
 			id="skills"
@@ -109,29 +97,6 @@ export function Skills() {
 						);
 					})}
 				</motion.div>
-
-				{/* <motion.div */}
-				{/* 	className="mt-16 rounded-2xl border border-border bg-muted/50 p-8 text-center" */}
-				{/* 	initial="hidden" */}
-				{/* 	whileInView="visible" */}
-				{/* 	viewport={{ once: true, margin: "-100px" }} */}
-				{/* > */}
-				{/* 	<h3 className="mb-2 text-xl font-semibold">Always Learning</h3> */}
-				{/* 	<p className="text-muted-foreground mb-6 max-w-xl mx-auto"> */}
-				{/* 		Currently exploring: Rust, WebAssembly, and advanced TypeScript */}
-				{/* 		patterns. Open to collaborating on interesting projects! */}
-				{/* 	</p> */}
-				{/* 	<span className="inline-flex items-center gap-2 rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium tracking-wider uppercase"> */}
-				{/* 		<span className="relative flex h-2 w-2"> */}
-				{/* 			<motion.div */}
-				{/* 				className="absolute inset-0 rounded-full bg-primary" */}
-				{/* 				animate={{ scale: [1, 1.5, 1], opacity: [1, 0.5, 1] }} */}
-				{/* 				transition={{ duration: 1.5, repeat: Infinity }} */}
-				{/* 			/> */}
-				{/* 		</span> */}
-				{/* 		Always growing */}
-				{/* 	</span> */}
-				{/* </motion.div> */}
 			</div>
 		</section>
 	);

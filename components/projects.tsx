@@ -1,9 +1,9 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { ExternalLink, Check } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { Check, ExternalLink } from "lucide-react";
 import { mydata } from "@/data/folio";
+import { cn } from "@/lib/utils";
 
 export function Projects() {
 	const sectionVariants: Variants = {
@@ -166,21 +166,6 @@ export function Projects() {
 						</motion.article>
 					))}
 				</motion.div>
-
-				{/* <motion.div */}
-				{/* 	className="text-center mt-12" */}
-				{/* 	initial="hidden" */}
-				{/* 	whileInView="visible" */}
-				{/* 	viewport={{ once: true, margin: "-100px" }} */}
-				{/* > */}
-				{/* 	<Button variant="outline" size="lg" className="group"> */}
-				{/* 		View All Projects */}
-				{/* 		<ArrowRight */}
-				{/* 			className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" */}
-				{/* 			aria-hidden="true" */}
-				{/* 		/> */}
-				{/* 	</Button> */}
-				{/* </motion.div> */}
 			</div>
 		</section>
 	);

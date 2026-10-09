@@ -1,9 +1,9 @@
 "use client";
 
 import { motion, type Variants } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, XIcon, Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
 import { mydata } from "@/data/folio";
 
 export function Hero() {
@@ -30,17 +30,6 @@ export function Hero() {
 		},
 	};
 
-	// const floatVariants: Variants = {
-	// 	animate: {
-	// 		y: [0, -10, 0],
-	// 		transition: {
-	// 			duration: 3,
-	// 			repeat: Infinity,
-	// 			// ease: "easeInOut",
-	// 		},
-	// 	},
-	// };
-	//
 	const floatVariants = {
 		y: [0, -10, 0],
 		transition: {
@@ -79,12 +68,11 @@ export function Hero() {
 			<div className="relative mx-auto max-w-7xl w-full">
 				<motion.div
 					className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center"
-					
 					variants={containerVariants}
 					initial="hidden"
 					animate="visible"
 				>
-					<div className="text-center lg:text-left order-2 lg:order-1">
+					<div className="text-center lg:text-left">
 						<motion.div variants={itemVariants} className="mb-6">
 							<span className="inline-flex items-center gap-2 rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium tracking-wider uppercase">
 								<motion.span
@@ -117,20 +105,6 @@ export function Hero() {
 							variants={itemVariants}
 							className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
 						>
-							{/* <motion.button */}
-							{/* 	whileHover={{ scale: 1.02 }} */}
-							{/* 	whileTap={{ scale: 0.98 }} */}
-							{/* 	className="group relative inline-flex items-center gap-2" */}
-							{/* > */}
-							{/* 	<Button size="lg" className="group"> */}
-							{/* 		View Projects */}
-							{/* 		<ArrowRight */}
-							{/* 			className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" */}
-							{/* 			aria-hidden="true" */}
-							{/* 		/> */}
-							{/* 	</Button> */}
-							{/* </motion.button> */}
-
 							<motion.a
 								href="#projects"
 								whileHover={{ scale: 1.02 }}
@@ -226,28 +200,6 @@ export function Hero() {
 						</div>
 					</motion.div>
 				</motion.div>
-
-				{/* <motion.div */}
-				{/* 	initial={{ opacity: 0 }} */}
-				{/* 	animate={{ opacity: 1 }} */}
-				{/* 	transition={{ delay: 1.5, duration: 0.8 }} */}
-				{/* 	className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" */}
-				{/* > */}
-				{/* 	<span className="text-xs text-muted-foreground uppercase tracking-wider"> */}
-				{/* 		Scroll to explore */}
-				{/* 	</span> */}
-				{/* 	<motion.div */}
-				{/* 		className="w-6 h-10 border-2 border-border rounded-full flex justify-center pt-2" */}
-				{/* 		animate={{ y: [0, 8, 0] }} */}
-				{/* 		transition={{ duration: 1.5, repeat: Infinity }} */}
-				{/* 	> */}
-				{/* 		<motion.div */}
-				{/* 			className="w-1.5 h-1.5 rounded-full bg-muted-foreground" */}
-				{/* 			animate={{ y: [0, 10, 0] }} */}
-				{/* 			transition={{ duration: 1.5, repeat: Infinity, delay: 0.2 }} */}
-				{/* 		/> */}
-				{/* 	</motion.div> */}
-				{/* </motion.div> */}
 			</div>
 		</section>
 	);

@@ -1,15 +1,15 @@
 import {
-	LucideIcon,
-	Code,
-	Palette,
-	Database,
-	Wrench,
-	BrainCog,
 	BookOpen,
+	BrainCog,
+	Code,
+	Database,
 	Heart,
 	Leaf,
+	type LucideIcon,
+	Palette,
+	Wrench,
 } from "lucide-react";
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 import { FaServer } from "react-icons/fa";
 
 export type AppIcon = LucideIcon | IconType;
