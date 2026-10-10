@@ -5,7 +5,7 @@ import { mydata } from "@/data/folio";
 
 const stats = [
 	{ value: `${mydata.yoe}+`, label: "Years Experience" },
-	{ value: "10+", label: "Projects Completed" },
+	{ value: "20+", label: "Projects Completed" },
 ];
 
 export function About() {

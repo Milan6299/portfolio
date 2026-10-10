@@ -109,14 +109,17 @@ export function Hero() {
 								href="#projects"
 								whileHover={{ scale: 1.02 }}
 								whileTap={{ scale: 0.98 }}
-								className="bg-primary text-background"
 							>
-								<Button variant="outline" size="lg">
+								<Button
+									variant="outline"
+									size="lg"
+									className="bg-primary text-background gap-4"
+								>
 									View Projects
-									<ArrowRight
-										className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1"
-										aria-hidden="true"
-									/>
+									{/* <ArrowRight */}
+									{/* 	className=" h-2 w-2 transition-transform group-hover:translate-x-1" */}
+									{/* 	aria-hidden="true" */}
+									{/* /> */}
 								</Button>
 							</motion.a>
 							<motion.a

@@ -134,14 +134,14 @@ export function Projects() {
 								</p>
 
 								<div
-									className="flex flex-wrap gap-2"
+									className="flex gap-2 max-h-16 overflow-scroll flex-wrap"
 									role="list"
 									aria-label="Technologies used"
 								>
 									{project.tags.map((tag) => (
 										<span
 											key={tag}
-											className="rounded-full border border-border bg-muted px-2.5 py-0.5 text-xs font-medium"
+											className="rounded-full text-wrap border border-border bg-muted px-2.5 py-0.5 text-xs font-medium"
 											role="listitem"
 										>
 											{tag}
@@ -149,7 +149,7 @@ export function Projects() {
 									))}
 								</div>
 								{project.url && (
-									<div className="flex items-center gap-3 pt-2 border-t border-border">
+									<div className="flex items-center gap-3 pt-2 border-border">
 										<a
 											href={`${project.url ? project.url : "#"}`}
 											target="_blank"
